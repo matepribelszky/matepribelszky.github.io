@@ -36,7 +36,7 @@ a:active { text-decoration: none; }
 body
 {
 	margin: auto;
-    width: 640px;
+    	max-width: 640px;
 	height: 100%;
 	background-color: var(--color1);
 	padding: 10px;
