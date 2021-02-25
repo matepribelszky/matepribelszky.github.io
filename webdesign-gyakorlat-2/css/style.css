@@ -20,13 +20,6 @@ html
 	font-family: 'Nunito', sans-serif;
 }
 
-bugyogo
-{
-	color: yellow;
-	text-align: center;
-	font-size: 100px;
-}
-
 a:link { text-decoration: none; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -36,7 +29,7 @@ a:active { text-decoration: none; }
 body
 {
 	margin: auto;
-    	max-width: 640px;
+    	width: 300px;
 	height: 100%;
 	background-color: var(--color1);
 	padding: 10px;
