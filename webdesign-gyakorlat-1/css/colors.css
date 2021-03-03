@@ -1,9 +1,0 @@
-:root
-{
-  --color1: #738580ff; /*szürkészöld*/
-  --color2: #bfcad0ff; /*világos acélkék*/
-  --color3: #970c10ff; /*bordó*/
-  --color4: #474440ff; /*sötét szürkésbarna*/
-  --gradient1: linear-gradient(var(--color2), var(--color1));
-  --gradient2: linear-gradient(var(--color1), var(--color2));
-}
