@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="images/favicon.jpg" type="image/jpg">
+	
+	<title>PM - Galéria</title>
+	
+	<style>
+		.gallery-img {
+		  cursor: pointer;
+		  width: 48%;
+		  height: 240px;
+		  object-fit: cover;
+		  display: inline-block; 
+		}
+
+		.modal {
+		  display: none;
+		  position: fixed;
+		  z-index: 1;
+		  padding-top: 20px;
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  height: 100%;
+		  /*justify-content: center;*/
+		  /*align-items: center;*/
+		  overflow: auto;
+		  background-color: var(--color1);
+		}
+
+		.modal-content {
+		  margin: auto;
+		  display: block;
+		  max-height: 75%;
+		}
+
+		@media only screen and (max-width: 960px){
+		  .modal-content {
+			width: 100%;
+		  }
+		  
+		.cropped {
+			width: 40%;
+			height: 30vh;
+			background-image: url('https://images.unsplash.com/photo-1569878698889-7bffa1896872?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+			background-position: center top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+		}
+	</style>
+</head>
+<body>
+	<iframe src="navbar.html" class="navbar shadow" title="Iframe Example"></iframe>
+	<div class="container">
+		<div class="gallery">
+			<img id="image--1" src="images/galeria/image-11.png" alt="image 1" class="gallery-img">
+			<img id="image--2" src="images/galeria/image-06.png" alt="image 2" class="gallery-img">
+			<img id="image--3" src="images/galeria/image-08.png" alt="image 3" class="gallery-img">
+			<img id="image--4" src="images/galeria/image-17.jpg" alt="image 4" class="gallery-img">
+			<img id="image--5" src="images/galeria/image-09.png" alt="image 5" class="gallery-img">
+			<img id="image--6" src="images/galeria/image-03.png" alt="image 6" class="gallery-img">
+			<img id="image--7" src="images/galeria/image-04.png" alt="image 7" class="gallery-img">
+			<img id="image--8" src="images/galeria/image-01.png" alt="image 8" class="gallery-img">
+			<img id="image--9" src="images/galeria/photo-2.png" alt="image 9" class="gallery-img">
+			<img id="image--10" src="images/galeria/image-24.png" alt="image 10" class="gallery-img">
+		</div>
+	</div>
+	
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	  <img class="modal-content shadow" id="fullImage" style="cursor: pointer;">
+	  <div id="caption"></div>
+	</div>
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img1 = document.getElementById("image--1");
+	var img2 = document.getElementById("image--2");
+	var img3 = document.getElementById("image--3");
+	var img4 = document.getElementById("image--4");
+	var img5 = document.getElementById("image--5");
+	var img6 = document.getElementById("image--6");
+	var img7 = document.getElementById("image--7");
+	var img8 = document.getElementById("image--8");
+	var img9 = document.getElementById("image--9");
+	var img10 = document.getElementById("image--10");
+	var modalImg = document.getElementById("fullImage");
+	img1.onclick = function(){
+	  modal.style.display = "flex";
+	  modalImg.src = this.src;
+	}
+	
+	img1.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img2.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img3.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img4.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img5.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img6.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img7.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img8.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img9.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+	img10.onclick = function(){ modal.style.display = "flex"; modalImg.src = this.src; }
+
+	modalImg.onclick = function() { 
+	  modal.style.display = "none";
+	}
+	</script>
+</body>
+</html>
