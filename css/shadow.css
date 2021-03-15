@@ -1,0 +1,10 @@
+.shadow {
+	box-shadow: 2px 2px var(--color4);
+}
+
+.shadow-horizontal {
+	box-shadow: 2px 0px var(--color4);
+}
+.shadow-vertical {
+	box-shadow: 0px 2px var(--color4);
+}

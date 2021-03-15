@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	<link rel="icon" href="images/favicon.jpg" type="image/jpg">
+	
+	<title>Gallery</title>
+	
+	<style>
+		div.picbar {
+			width: 100%;
+			overflow-x: auto;
+			white-space: nowrap;
+		}
+		
+		img.crop {
+			cursor: pointer;
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			display: inline-block; 
+			border: 2px solid var(--color2);
+		}
+	</style>
+</head>
+<body onload="loadImage()">
+	<iframe src="navbar.html" class="navbar shadow" title="nav bar"></iframe>
+	<div class="container">
+
+		<div class="panel shadow" style="">
+			<div class="header-container">
+				<img src="images/bg-5.jpg" width="100%" style="display: block;"></img>
+				<div class="header-text"><strong>Gallery</strong></div>
+			</div>
+			<div class="picbar">
+				<img id="image--01" src="images/gallery/image-08.jpg" alt="image 1" class="crop">
+				<img id="image--07" src="images/gallery/image-24.jpg" alt="image 7" class="crop">
+				<img id="image--02" src="images/gallery/image-06.jpg" alt="image 2" class="crop">
+				<img id="image--03" src="images/gallery/image-07.jpg" alt="image 3" class="crop">
+				<img id="image--04" src="images/gallery/photo-2.jpg" alt="image 4" class="crop">
+				<img id="image--05" src="images/gallery/image-09.jpg" alt="image 5" class="crop">
+				<img id="image--06" src="images/gallery/image-11.jpg" alt="image 6" class="crop">
+				<img id="image--08" src="images/gallery/image-18.png" alt="image 8" class="crop">
+				<img id="image--09" src="images/gallery/image-17.jpg" alt="image 9" class="crop">
+				<img id="image--10" src="images/gallery/image-23.jpg" alt="image 10" class="crop">
+				<img id="image--11" src="images/gallery/image-04.jpg" alt="image 11" class="crop">
+				<img id="image--12" src="images/gallery/image-01.jpg" alt="image 12" class="crop">
+			</div>
+			
+			<img width="100%" id="fullImage">
+		</div>
+		<div class="footnote">Copyright &copy 2021 Máté Pribelszky</div>
+	</div>
+	
+	<script>
+		var img01 = document.getElementById("image--01");
+		var img02 = document.getElementById("image--02");
+		var img03 = document.getElementById("image--03");
+		var img04 = document.getElementById("image--04");
+		var img05 = document.getElementById("image--05");
+		var img06 = document.getElementById("image--06");
+		var img07 = document.getElementById("image--07");
+		var img08 = document.getElementById("image--08");
+		var img09 = document.getElementById("image--09");
+		var img10 = document.getElementById("image--10");
+		var img11 = document.getElementById("image--11");
+		var img12 = document.getElementById("image--12");
+		var fullImage = document.getElementById("fullImage");
+		
+		img01.onclick = function(){ fullImage.src = this.src; }
+		img02.onclick = function(){ fullImage.src = this.src; }
+		img03.onclick = function(){ fullImage.src = this.src; }
+		img04.onclick = function(){ fullImage.src = this.src; }
+		img05.onclick = function(){ fullImage.src = this.src; }
+		img06.onclick = function(){ fullImage.src = this.src; }
+		img07.onclick = function(){ fullImage.src = this.src; }
+		img08.onclick = function(){ fullImage.src = this.src; }
+		img09.onclick = function(){ fullImage.src = this.src; }
+		img10.onclick = function(){ fullImage.src = this.src; }
+		img11.onclick = function(){ fullImage.src = this.src; }
+		img12.onclick = function(){ fullImage.src = this.src; }
+		function loadImage(){ fullImage.src = img01.src; }
+	</script>
+</body>
+</html>

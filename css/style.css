@@ -1,0 +1,91 @@
+@import url('colors.css');
+@import url('font.css');
+@import url('shadow.css');
+
+body {
+	margin: 0;
+	background-image: var(--gradient1);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+a { text-decoration: none; }
+a:link { color: var(--color3); }
+a:visited {}
+a:hover {}
+a:active {}
+
+.navbar {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	height:40px;
+	width:100%;
+	border:none;
+	 z-index: 2;
+}
+
+.container {
+	margin-top:42px;
+	margin-left: auto;
+	margin-right: auto;
+    max-width: 680px;
+	height: 100%;
+	background-color: var(--color1);
+	padding: 10px;
+}
+
+p { text-align: justify; }
+
+h1 { text-align: center; }
+
+div.header-container {
+	position: relative;
+	text-align: center;
+	margin: -20px -20px 20px -20px;
+	 z-index: 1;
+}
+
+div.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 64px;
+	color: var(--color3);
+	
+}
+
+div.footnote {
+	font-weight: bold;
+	text-align: center;
+	color: var(--color4);
+}
+
+.panel {
+	display: block;
+	background-color: var(--color2);
+	/*border: 1px solid var(--color1);*/
+	padding: 20px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	color: var(--color4);
+	
+	text-align: justify;
+	font-size: 16px;
+}
+
+
+.button {
+	background-color: var(--color3);
+	color: white;
+	padding: 4px;
+	text-align: center;
+}
+
+.button.type1 {
+	display: inline-block;
+	width: 40%;
+	font-size: 18px;
+}
