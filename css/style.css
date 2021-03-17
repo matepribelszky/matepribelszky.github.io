@@ -16,7 +16,7 @@ a:visited {}
 a:hover {}
 a:active {}
 
-.navbar {
+#navbar {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -26,7 +26,7 @@ a:active {}
 	 z-index: 2;
 }
 
-.container {
+#container {
 	margin-top:42px;
 	margin-left: auto;
 	margin-right: auto;
@@ -40,14 +40,14 @@ p { text-align: justify; }
 
 h1 { text-align: center; }
 
-div.header-container {
+#header-container {
 	position: relative;
 	text-align: center;
 	margin: -20px -20px 20px -20px;
 	 z-index: 1;
 }
 
-div.header-text {
+#header-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -57,7 +57,7 @@ div.header-text {
 	
 }
 
-div.footnote {
+#footer {
 	font-weight: bold;
 	text-align: center;
 	color: var(--color4);
@@ -66,7 +66,6 @@ div.footnote {
 .panel {
 	display: block;
 	background-color: var(--color2);
-	/*border: 1px solid var(--color1);*/
 	padding: 20px;
 	margin-top: 0px;
 	margin-bottom: 20px;
