@@ -8,17 +8,17 @@
 	<title>Games</title>
 	
 	<style>
-	a { text-decoration: none; }
-	a:link { background-color: var(--color3); color: white; }
-	a:visited { background-color: var(--color3); color: white; }
-	a:active { background-color: var(--color3); color: white;}
-	a:hover { background-color: var(--color1); color: var(--color2); }
+	a { text-decoration: none; } a:hover { background-color: var(--color1); color: var(--color2); }
 	h2{ text-align:center }
 	</style>
 </head>
 <body>
-	<iframe src="navbar.html" class="navbar shadow" title="Iframe Example"></iframe>
-	<div class="container">
+	<iframe id="navbar" src="navbar.html" class="shadow" title="Iframe Example"></iframe>
+	<div id="container">
+		<div id="header-container" class="shadow" style="margin: 0px;">
+			<img src="images/bg-8.jpg" width="100%" style="display: block;"></img>
+			<div id="header-text"><strong>Games</strong></div>
+		</div> <br>
 	
 		<img src="images/jatek-through-the-fragmentation.jpg"
 		width="100%" class="shadow"
@@ -100,7 +100,7 @@
 			</div>
 		</div>
 		
-		<div class="footnote">Copyright &copy 2021 Máté Pribelszky</div>
+		<div id="footer">Copyright &copy 2021 Máté Pribelszky</div>
 	</div>
 </body>
 </html>
