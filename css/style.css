@@ -10,11 +10,15 @@ body {
 	background-attachment: fixed;
 }
 
-a { text-decoration: none; }
-a:link { color: var(--color3); }
-a:visited {}
-a:hover {}
-a:active {}
+a.text-link { text-decoration: none; color: color: var(--color3)}
+	a.text-link:link { color: var(--color3); }
+	a.text-link:active{ color: var(--color3); }
+	a.text-link:visited { color: var(--color3); }
+	a.text-link:hover { color: var(--color1); }
+
+.text-link{
+	font-weight: bold;
+}
 
 #navbar {
 	overflow: hidden;
@@ -72,18 +76,4 @@ h1 { text-align: center; }
 	
 	text-align: justify;
 	font-size: 16px;
-}
-
-
-.button {
-	background-color: var(--color3);
-	color: white;
-	padding: 4px;
-	text-align: center;
-}
-
-.button.type1 {
-	display: inline-block;
-	width: 40%;
-	font-size: 18px;
 }
