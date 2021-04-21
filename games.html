@@ -22,10 +22,12 @@
 			text-align: center;
 		}
 		
+		.image-container { margin:-20px -20px 0px -20px; }
+		
 		h2{ text-align:center }
 	</style>
 </head>
-<body>
+<body onload="myFunction()">
 	<iframe id="navbar" src="navbar.html" class="shadow" title="Iframe Example"></iframe>
 	<div id="container">
 		<div id="header-container" class="shadow" style="margin: 0px;">
@@ -33,20 +35,15 @@
 			<div id="header-text"><strong>Games</strong></div>
 		</div><br>
 		
-		<!-- <div class="panel shadow">
-			<a class="text-link" href="#through-the-fragmentation">Through The Fragmentation</a><br>
-			<a class="text-link" href="#alagsor">Alagsor</a><br>
-			<a class="text-link" href="#the-hidden-fragmentation">The Hidden Fragmentation</a>
-		</div> -->
-	
-		<img src="images/jatek-through-the-fragmentation.jpg" width="100%" class="shadow">
 		<div class="panel shadow">
+			<div class="image-container"><img src="images/jatek-through-the-fragmentation.jpg" width="100%"></div>
+			
 			<h1>Through The Fragmentation</h1>
 			<p>My currently developed project, successor of The Hidden Fragmentation. Similar to its predecessor, Through The Fragmentation is a first person adventure game focusing on exploration, environmental storytelling and interactions with the different strange characters inhabiting the game world.</p>
 			
 			<h2>Trailer</h2>
-			<iframe
-			width=100% height=360px src="https://www.youtube-nocookie.com/embed/pfI1UU_2-yw"
+			<iframe id="video-through-the-fragmentation"
+			width=100% src="https://www.youtube-nocookie.com/embed/pfI1UU_2-yw"
 			frameborder="0" allow="accelerometer; autoplay; clipboard-write;
 			encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen></iframe>
@@ -63,8 +60,9 @@
 			</div>
 		</div>
 	
-		<img id="the-hidden-fragmentation" src="images/jatek-hidden-fragmentation.jpg" width="100%" class="shadow">
 		<div class="panel shadow">
+			<div class="image-container"><img src="images/jatek-hidden-fragmentation.jpg" width="100%"></div>
+		
 			<h1>The Hidden Fragmentation</h1>
 			<p>Surreal first person exploration adventure game with an atmospheric and immersive environment that sees the player searching an abandoned facility for a mysterious anomaly called the "Fragmentation". It's the predecessor of my currently developed video game, Through The Fragmentation.</p>
 			
@@ -90,8 +88,9 @@
 			</div>
 		</div>
 		
-		<img id="alagsor" src="images/jatek-alagsor.jpg" width="100%" class="shadow">
 		<div class="panel shadow">
+			<div class="image-container"><img src="images/jatek-alagsor.jpg" width="100%"></div>
+			
 			<h1>Alagsor</h1>
 			<p>2D puzzle game inspired by Snake, Sokoban and Namco's Battle City. It has been my first and only attempt at creating pixel art graphics and grid-based movement for a video game so far.</p>
 			<p>The player controls a snake-like, one eyed creature which can transform its body into solid wall to avoid getting caught by enemies. Meanwhile the player needs to collect keys to open locked doors, move boxes, avoid traps, etc.</p>
@@ -115,5 +114,21 @@
 		
 		<div id="footer">Copyright &copy 2021 Máté Pribelszky</div>
 	</div>
+	
+	<script>
+	function myFunction() {
+  alert("Page is loaded");
+}
+	
+		var video1 = document.getElementById("video-through-the-fragmentation");
+
+		img01.onclick = function(){ fullImage.src = this.src; }
+
+		function setVideos()
+		{
+		window.alert(5 + 6);
+			video1.height = video1.width * 2.0f;
+		}
+	</script>
 </body>
 </html>
