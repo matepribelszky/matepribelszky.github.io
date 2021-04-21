@@ -40,7 +40,7 @@ a.text-link { text-decoration: none; color: color: var(--color3)}
 	padding: 10px;
 }
 
-p { text-align: justify; }
+p { text-align: left; }
 
 h1 { text-align: center; }
 
