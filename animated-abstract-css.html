@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>CSS Art</title>
+		<title>CSS Rotate</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
 	</head>
 	
 	<style>
-		.canvas
+		#canvas
 		{
-			width: 440px;
-			height: 440px;
-			display: inline-block;
+			position: relative;
+			width: 70%;
+			height: 70%;
 			background-color: black;
+			top: 15%;
+			left: 15%;
 		}
 		
-		.container
-		{
-			background-color: black;
-			border-radius: 1%;
-			box-shadow: 0em 0em 1em rgba(0,0,0,0.3);
-		}
 		.circle
 		{
 			height: 100%;
@@ -33,12 +29,23 @@
 		
 		.square
 		{
+			background-color: black;
+			border-radius: 1%;
+			box-shadow: 0em 0em 1em rgba(0,0,0,0.3);
+			
 			position: relative;
 			left: 5%;
 			top: 15%;
 			height: 75%;
 			width: 75%;
 			animation: ani1 10s infinite;
+		}
+		
+		#container
+		{
+			width: 30vw;
+			height: 30vw;;
+			overflow: hidden;
 		}
 		
 		@keyframes ani1
@@ -57,41 +64,41 @@
 		}
 	</style>
 
-	<body style="margin: 8em; animation-direction: alternate;">
-
-		<div class="canvas">
+	<body style="margin-top: 0; margin-left: 35vw;">
+	<div id="container">
+		<div id="canvas">
 			<div class="circle" style="background-color: #fffefc">
-				<div class="square container">
+				<div class="square">
 					<div class="circle" style="background-color: #ffecec">
-						<div class="square container">
+						<div class="square">
 							<div class="circle" style="background-color: #ffd2d2">
-								<div class="square container">
+								<div class="square">
 									<div class="circle" style="background-color: #ffb6b6">
-										<div class="square container">
+										<div class="square">
 											<div class="circle" style="background-color: #ff9696">
-												<div class="square container">
+												<div class="square">
 													<div class="circle" style="background-color: #ff7274">
-														<div class="square container">
+														<div class="square">
 															<div class="circle" style="background-color: #ff4e4e">
-																<div class="square container">
+																<div class="square">
 																	<div class="circle" style="background-color: #ff2626">
-																		<div class="square container">
+																		<div class="square">
 																			<div class="circle" style="background-color: #fe0000">
-																				<div class="square container">
+																				<div class="square">
 																					<div class="circle" style="background-color: #d60000">
-																						<div class="square container">
+																						<div class="square">
 																							<div class="circle" style="background-color: #b00000">
-																								<div class="square container">
+																								<div class="square">
 																									<div class="circle" style="background-color: #8a0000">
-																										<div class="square container">
+																										<div class="square">
 																											<div class="circle" style="background-color: #680000">
-																												<div class="square container">
+																												<div class="square">
 																													<div class="circle" style="background-color: #480000">
-																														<div class="square container">
+																														<div class="square">
 																															<div class="circle" style="background-color: #2a0000">
-																																<div class="square container">
+																																<div class="square">
 																																	<div class="circle" style="background-color: #120000">
-																																		<div class="square container">
+																																		<div class="square">
 	
 																																		</div>
 																																	</div>
@@ -125,6 +132,7 @@
 					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</body>
 </html>
