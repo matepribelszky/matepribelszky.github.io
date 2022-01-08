@@ -3,7 +3,7 @@
 	<head>
 		<title>prototype</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
 		
 		<style>
 			body {
@@ -14,17 +14,27 @@
 			
 			#iFrameTop {
 				display: block;
-				width: 40%;
+				width: 30em;
 				height: 320px;
 				margin: 0; position: relative; left: 50%; transform: translate(-50%);
 			}
 			
 			#iFrameMiddle {
 				display: block;
-				width: 40%;
+				width: 30em;
 				height: 300px;
 				margin: 0; position: relative; left: 50%; transform: translate(-50%);
 				/*animation: frame2 0.2s 1; animation-timing-function: ease-out;*/
+			}
+			
+			@media screen and (max-width: 40em) {
+				#iFrameMiddle {
+					width: 100%;
+				}
+				
+				#iFrameTop {
+					width: 100%;
+				}
 			}
 			
 			@keyframes frame2 {
