@@ -1,0 +1,62 @@
+@import url('colors.css');
+
+:root
+{
+	--canvasWidth: 40em;
+	--middleFrameHeight: 16.9em;
+}
+
+body {
+	margin:0;
+	background-color: var(--clrBackground);
+	font-family: Verdena, Tahoma, sans-serif;
+}
+
+#framesCanvas {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: calc(50vw - var(--canvasWidth) / 2);
+	margin-right: calc(50vw - var(--canvasWidth) / 2);
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#iFrameTop {
+	margin: 0;
+	position: relative;
+	width: 100%;
+	height: calc(var(--canvasWidth) / 2);
+	animation: frameTopAni 2s 1 ease;
+}
+
+#iFrameMiddle {
+	width: 100%;
+	height: 100%;
+	margin-top: -0.2em;
+}
+
+#eye-container {
+	position: absolute;
+	z-index: 10;
+	left: 50%; top: 0;
+	transform: translate(-50%);
+}
+
+@keyframes frameTopAni {
+	0% { top: 50%; transform: translate(0%, -50%);}
+	50% { top: 50%; transform: translate(0%, -50%);}
+	100% { top: 0%; }
+}
+
+@media screen and (max-width: 40em)
+{
+	#framesCanvas {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	
+	#iFrameTop {
+		height: 50vw;
+	}
+}
