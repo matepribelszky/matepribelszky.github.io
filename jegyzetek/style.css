@@ -1,0 +1,64 @@
+:root
+{
+  --width: 40em;
+}
+
+p {
+	display: block;
+	margin: 1em 2em 1em 2em;
+	text-align: justify;
+	tab-sizes: 2;
+}
+
+.header {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1em 0em 1em 0em;
+	
+	text-align: center;
+	background-color: black;
+	color: white;
+	font-size: 1em;
+}
+
+#footnote { text-align: right; font-style: italic;}
+
+#main {
+	display: inline-block;
+	background-color: lavender;
+
+	box-shadow: 0.2em 0.2em brown;
+	width: 100%;
+}
+
+button {
+	border: 0;
+	width: 8em;
+	height: 2em;
+	background: white;
+	color: black;
+	font-size: 0.7em;
+}
+
+a { text-decoration: none; font-size: 1em; display: block;}
+a:link { color: white; font-weight: normal; }
+a:visited { color: white; font-weight: normal; }
+a:active { color: brown; font-weight: bold; }
+a:hover { color: brown; font-weight: bold; }
+
+html { font-family: 'Trebuchet MS', 'Verdana', sans-serif; text-align: center; }
+body { display: inline-block; margin: 0; width: var(--width); background-color:tomato; }
+
+@media screen and (max-width: 40em)
+{
+	body {
+		padding: 0em;
+		width: 100%;
+		background-color: black;
+	}
+	
+	#main {
+		box-shadow: 0em 0em lavender;
+	}
+}
