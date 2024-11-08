@@ -1,0 +1,15 @@
+matepribelszky.github.io/files/custom_maps/box-world-2.txt
+matepribelszky.github.io/files/custom_maps/box-world-3.txt
+matepribelszky.github.io/files/custom_maps/coin-field-1.txt
+matepribelszky.github.io/files/custom_maps/complex-corridors.txt
+matepribelszky.github.io/files/custom_maps/draft-2.txt
+matepribelszky.github.io/files/custom_maps/multiplayer-test.txt
+matepribelszky.github.io/files/custom_maps/secret-map-1.txt
+matepribelszky.github.io/files/custom_maps/secret-map-2.txt
+matepribelszky.github.io/files/custom_maps/sokoban-1.txt
+matepribelszky.github.io/files/custom_maps/sokoban-2.txt
+matepribelszky.github.io/files/custom_maps/sokoban-3.txt
+matepribelszky.github.io/files/custom_maps/sokoban-4.txt
+matepribelszky.github.io/files/custom_maps/sokoban-5.txt
+matepribelszky.github.io/files/custom_maps/tutorial-avoiding-enemies.txt
+matepribelszky.github.io/files/custom_maps/water-test.txt
