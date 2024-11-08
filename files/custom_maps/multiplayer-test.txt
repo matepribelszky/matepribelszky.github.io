@@ -1,0 +1,31 @@
+main:
+--,wb,wb,wb,Gr,wb,wb,wb,--,--,--,--;
+--,wb,sr,--,--,--,--,wb,--,--,--,--;
+--,wb,wb,wb,gl,wb,wb,wb,wb,wb,--,--;
+--,wb,--,--,--,--,--,wb,cn,wb,--,--;
+wb,wb,--,wt,wt,wt,--,wb,--,wb,wb,wb;
+pw,--,--,--,bt,wt,--,gu,--,--,bt,wb;
+wb,wb,--,wt,wt,wt,--,wb,su,wb,wb,wb;
+--,wb,--,--,--,--,--,wb,wb,wb,--,--;
+--,wb,wb,wb,--,wb,wb,wb,--,--,--,--;
+--,--,--,wb,ps,wb,--,--,--,--,--,--;
+
+ground:
+--,--,--,--,iv,--,--,--,--,--,--,--;
+--,--,sl,sl,sl,sl,sl,--,--,--,--,--;
+--,--,--,--,iv,--,--,--,--,--,--,--;
+--,--,gr,gr,gr,gr,gr,--,sl,--,--,--;
+--,--,gr,--,--,--,gr,--,sl,--,--,--;
+ih,gr,gr,ih,cn,--,gr,ih,sl,sl,sl,--;
+--,--,gr,--,--,--,gr,--,sl,--,--,--;
+--,--,gr,gr,gr,gr,gr,--,--,--,--,--;
+--,--,--,--,gr,--,--,--,--,--,--,--;
+--,--,--,--,iv,--,--,--,--,--,--,--;
+
+switchable:
+x4y2,x7y5;
+x4y2,x4y0;
+
+properties:
+ multiplayer = true;
+ water_mask = true;
